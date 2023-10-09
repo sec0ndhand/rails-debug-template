@@ -1,0 +1,22 @@
+FROM ruby:3.2.1
+ENV ROOT="/myapp"
+ENV LANG=C.UTF-8
+ENV TZ=UTC
+
+# Install essential libraries
+RUN apt-get update -qq && apt-get install -y nodejs postgresql-client
+
+RUN mkdir ${ROOT}
+WORKDIR ${ROOT}
+
+# RUN gem install bundler
+# COPY .gitignore Gemfile** ${ROOT}
+# RUN if test -e Gemfile; then bundle install; fi
+
+# RUN bundle install --jobs 4
+
+# Add project files
+# COPY . ${ROOT}
+
+# RUN /bin/sh -c "rm -f tmp/pids/server.pid"
+# ENTRYPOINT [ "bundle exec rails s -p 3000 -b '0.0.0.0'" ]
