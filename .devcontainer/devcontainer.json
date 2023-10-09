@@ -5,5 +5,15 @@
 		"docker-compose.yml"
 	],
 	"service": "web",
-  "workspaceFolder": "/myapp"
+	"workspaceFolder": "/myapp",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"castwide.solargraph", // solargraph
+				"rebornix.Ruby", // Ruby
+				"misogi.ruby-rubocop", // Rubocop
+				"KoichiSasada.vscode-rdbg" // Ruby Debug
+			]
+		}
+	}
 }
