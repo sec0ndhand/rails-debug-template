@@ -14,8 +14,6 @@ jobs:
       id: checkout_code
       uses: actions/checkout@v2
 
-    - name: run rubocop on the code
-
     - name: Build and push Docker image to GitHub Packages
       id: docker_build
       uses: docker/build-push-action@v2
