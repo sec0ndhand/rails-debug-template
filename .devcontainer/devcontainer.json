@@ -12,7 +12,8 @@
 				"castwide.solargraph", // solargraph
 				"rebornix.Ruby", // Ruby
 				"misogi.ruby-rubocop", // Rubocop
-				"KoichiSasada.vscode-rdbg" // Ruby Debug
+				"KoichiSasada.vscode-rdbg", // Ruby Debug
+				"Shopify.ruby-lsp"
 			]
 		}
 	}

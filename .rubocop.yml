@@ -1,0 +1,14 @@
+inherit_from: .rubocop_todo.yml
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.2.1
+  Exclude:
+    - 'config/**/*.rb'
+    - 'db/**/*.rb'
+    - '**/Rakefile'
+    - '**/config.ru'
+    - '**/spec_helper.rb'
+    - '**/rails_helper.rb'
+    - 'lib/tasks/db_extensions.rake'
+    - 'lib/tasks/onboarding.rake'
+    - 'bin/*'
